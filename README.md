@@ -1,4 +1,4 @@
-# [DE-Kursname hier eintragen]
+# .NET MAUI Grundkurs
 
 Dies ist das Repository für den **LinkedIn Learning** Kurs `[COURSENAME]`. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
 
@@ -30,17 +30,18 @@ Dieses Problem lösen Sie wie folgt:
 ## Installation
 
 1. Um diese Übungsdateien nutzen zu können, müssen Sie folgendes installiert haben:
-   - [list of requirements for course]
+   - Visual Studio 2022, Version 17.4 oder höher. Die Beispiele können mit jeder verfügbaren Edition (Community, Professional, Enterprise) bearbeitet werden.
+   - Falls Sie über einen Mac verfügen, dann müssen Sie dort Visual Studio for Mac 2022, Version 17.4 oder höher, und XCode installieren.
 2. Klonen Sie das Repository in Ihre lokale Maschine unter Verwendung von terminal (Mac), CMD (Windows) oder ein anderes Werkzeug mit grafischer Bedienoberfläche wie SourceTree.
-3. [Course-specific instructions]
+3. Um Ihre App auch für iOS zu kompilieren benötigen Sie einen Mac. Ohne Mac können Sie dem Training zwar komplett folgen, aber nur die Android- und Windows-App kompilieren.
 
 ### Autor
 
-**[Name hier eintragen]**
+**André Krämer**
 
-_[Berufsbezeichnung hier eintragen]_
+_Geschäftsführer der Quality Bytes GmbH_
 
-Sehen Sie sich andere Kurse des Autors auf [LinkedIn Learning](https://www.linkedin.com/learning/instructors/name_des_autors) an.
+Sehen Sie sich andere Kurse des Autors auf [LinkedIn Learning](https://www.linkedin.com/learning/instructors/andre-kramer) an.
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 [lil-course-url]: https://www.linkedin.com/learning/building-a-graphql-project-with-react-js
