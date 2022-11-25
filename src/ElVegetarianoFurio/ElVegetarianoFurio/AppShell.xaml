@@ -4,11 +4,17 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:ElVegetarianoFurio"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:profile="clr-namespace:ElVegetarianoFurio.Profile"
+    Shell.FlyoutBehavior="Flyout">
 
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+
+    <ShellContent
+        Title="Profile"
+        ContentTemplate="{DataTemplate profile:ProfilePage}"
+        Route="ProfilePage" />
 
 </Shell>
