@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using ElVegetarianoFurio.Profile;
+using Microsoft.Extensions.Logging;
 
 namespace ElVegetarianoFurio;
 
@@ -19,6 +20,11 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 
-		return builder.Build();
+		builder.Services.AddSingleton<IProfileService, ProfileService>();
+		builder.Services.AddTransient<ProfileViewModel>();
+		builder.Services.AddTransient<ProfilePage>();
+		builder.Services.AddSingleton<IPreferences>(Preferences.Default);
+
+        return builder.Build();
 	}
 }

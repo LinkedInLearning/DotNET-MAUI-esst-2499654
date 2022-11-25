@@ -32,11 +32,11 @@ namespace ElVegetarianoFurio.Profile
         [ObservableProperty]
         private bool _isBusy;
 
-        private readonly ProfileService _profileService;
+        private readonly IProfileService _profileService;
 
-        public ProfileViewModel()
+        public ProfileViewModel(IProfileService profileService)
         {
-            _profileService = new ProfileService();
+            _profileService = profileService;
         }
 
 
