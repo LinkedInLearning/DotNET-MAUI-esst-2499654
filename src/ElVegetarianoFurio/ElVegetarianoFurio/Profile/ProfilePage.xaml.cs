@@ -2,9 +2,18 @@ namespace ElVegetarianoFurio.Profile;
 
 public partial class ProfilePage : ContentPage
 {
-	public ProfilePage()
+    private ProfileViewModel _viewModel;
+
+    public ProfilePage()
 	{
 		InitializeComponent();
-		BindingContext = new ProfileViewModel();
+		BindingContext = _viewModel =  new ProfileViewModel();
 	}
+
+    protected override void OnNavigatedTo(NavigatedToEventArgs args)
+    {
+        base.OnNavigatedTo(args);
+        _viewModel.Initialize();
+    }
+
 }
