@@ -2,22 +2,19 @@
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
+    private readonly MainPageViewModel _viewModel;
 
-	public MainPage()
+    public MainPage(MainPageViewModel viewModel)
 	{
 		InitializeComponent();
-	}
+        BindingContext = _viewModel = viewModel;
+    }
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
+    protected override async void OnNavigatedTo(NavigatedToEventArgs args)
+    {
+        await _viewModel.InitializeAsync();
+        base.OnNavigatedTo(args);
+    }
 
-
-			CounterBtn.Text = $"{count} Mal geklickt";
-
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
 }
 
