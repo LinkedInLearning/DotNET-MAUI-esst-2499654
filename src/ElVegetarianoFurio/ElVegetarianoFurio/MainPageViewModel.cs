@@ -9,7 +9,7 @@ public partial class MainPageViewModel
 {
     private readonly IMenuService _menuService;
 
-    ObservableCollection<Category> Categories { get; } = new ObservableCollection<Category>();
+    public ObservableCollection<Category> Categories { get; } = new ObservableCollection<Category>();
 
 	public MainPageViewModel(IMenuService menuService)
 	{
