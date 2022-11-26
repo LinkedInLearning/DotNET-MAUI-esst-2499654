@@ -1,4 +1,5 @@
-﻿using ElVegetarianoFurio.Profile;
+﻿using ElVegetarianoFurio.Menu;
+using ElVegetarianoFurio.Profile;
 using Microsoft.Extensions.Logging;
 
 namespace ElVegetarianoFurio;
@@ -24,6 +25,7 @@ public static class MauiProgram
 		builder.Services.AddTransient<ProfileViewModel>();
 		builder.Services.AddTransient<ProfilePage>();
 		builder.Services.AddSingleton<IPreferences>(Preferences.Default);
+		builder.Services.AddSingleton<IMenuService, MenuService>();
 
         return builder.Build();
 	}
