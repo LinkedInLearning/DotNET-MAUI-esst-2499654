@@ -11,7 +11,7 @@ using System.Windows.Input;
 namespace ElVegetarianoFurio.Profile
 {
     [INotifyPropertyChanged]
-    public partial class ProfileViewModel 
+    public partial class ProfileViewModel
     {
 
         [ObservableProperty]
@@ -42,12 +42,14 @@ namespace ElVegetarianoFurio.Profile
 
         public async Task Initialize()
         {
+            IsBusy = true;
             var profile = await _profileService.GetAsync();
             FullName = profile.FullName;
             Street = profile.Street;
-            Zip= profile.Zip;
+            Zip = profile.Zip;
             City = profile.City;
             Phone = profile.Phone;
+            IsBusy = false;
         }
 
 
@@ -57,7 +59,7 @@ namespace ElVegetarianoFurio.Profile
             IsBusy = true;
 
             await _profileService.SaveAsync(
-                new Profile 
+                new Profile
                 {
                     FullName = FullName,
                     Street = Street,
