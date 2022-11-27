@@ -7,10 +7,12 @@
              x:Class="ElVegetarianoFurio.MainPage">
 
 
-    <Grid RowDefinitions="Auto, Auto, *">
-        <Label Text="El Vegetariano Furio" FontSize="Title" FontFamily="Sofia" HorizontalOptions="Center"/>
-        <Label Text="Unsere Speisen" Grid.Row="1" FontFamily="Shadows" FontSize="Medium" HorizontalOptions="Center"/>
-        <CollectionView Grid.Row="2" ItemsSource="{Binding Categories}">
+    <Grid RowDefinitions="Auto, Auto, Auto, *">
+        <Label Text="{x:StaticResource IconUtensils}" FontFamily="FA-5-Solid" FontSize="99" 
+               HorizontalTextAlignment="Center" Padding="10" TextColor="Black"/>
+        <Label Text="El Vegetariano Furio" Grid.Row="1" FontSize="Title" FontFamily="Sofia" HorizontalOptions="Center"/>
+        <Label Text="Unsere Speisen" Grid.Row="2" FontFamily="Shadows" FontSize="Medium" HorizontalOptions="Center"/>
+        <CollectionView Grid.Row="3" ItemsSource="{Binding Categories}">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="menu:Category">
                     <Border Margin="5" StrokeShape="RoundRectangle 15 15 15 15" StrokeThickness="0">

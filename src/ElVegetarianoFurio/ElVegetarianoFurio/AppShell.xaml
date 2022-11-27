@@ -10,11 +10,19 @@
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Route="MainPage">
+        <ShellContent.Icon>
+            <FontImageSource FontFamily="FA-5-Solid" Glyph="{x:StaticResource IconHome}" Color="Black"/>
+        </ShellContent.Icon>
+    </ShellContent>
 
     <ShellContent
         Title="Profile"
         ContentTemplate="{DataTemplate profile:ProfilePage}"
-        Route="ProfilePage" />
+        Route="ProfilePage">
+        <ShellContent.Icon>
+            <FontImageSource FontFamily="FA-5-Solid" Glyph="{x:StaticResource IconUserCircle}" Color="Black"/>
+        </ShellContent.Icon>
+    </ShellContent>
 
 </Shell>

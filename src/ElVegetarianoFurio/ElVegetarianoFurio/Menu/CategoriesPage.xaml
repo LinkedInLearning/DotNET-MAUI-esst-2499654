@@ -10,7 +10,7 @@
             <Grid HeightRequest="200">
                 <Image Source="{Binding Category.Id, StringFormat='category{0}.jpg'}" HeightRequest="200" Aspect="Fill"/>
                 <VerticalStackLayout Padding="5" VerticalOptions="End" BackgroundColor="Black" Opacity="0.7">
-                    <Label Text="{Binding Category.Name}" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="{Binding Category.Name}" FontFamily="Shadows"  FontAttributes="Bold" TextColor="White"/>
                     <Label Text="{Binding Category.Description}" FontAttributes="Italic" TextColor="White"/>
                 </VerticalStackLayout>
             </Grid>
@@ -21,9 +21,9 @@
                     <Grid RowDefinitions="auto, auto" ColumnDefinitions="60, *, auto" 
                           RowSpacing="6" ColumnSpacing="6" Padding="10">
                         <Image Source="{Binding Id, StringFormat='dish{0}.jpg'}" WidthRequest="60" Aspect="Fill" Grid.RowSpan="2"/>
-                        <Label Grid.Column="1" Text="{Binding Name}" FontAttributes="Bold"/>
-                        <Label Grid.Column="1" Grid.Row="1" Text="{Binding Description}" FontAttributes="Italic"/>
-                        <Label Grid.Column="2" Text="{Binding Price, StringFormat='{0:C}'}"/>
+                        <Label Grid.Column="1" FontFamily="Shadows"  Text="{Binding Name}" FontAttributes="Bold"/>
+                        <Label Grid.Column="1" FontFamily="Shadows"  Grid.Row="1" Text="{Binding Description}" FontAttributes="Italic"/>
+                        <Label Grid.Column="2" FontFamily="Shadows"  Text="{Binding Price, StringFormat='{0:C}'}"/>
                     </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>

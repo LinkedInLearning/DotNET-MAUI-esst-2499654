@@ -54,6 +54,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\Font Awesome 5 Free-Solid-900.otf" />
 	  <None Remove="Resources\Fonts\ShadowsIntoLight-Regular.ttf" />
 	  <None Remove="Resources\Fonts\Sofia-Regular.ttf" />
 	  <None Remove="Resources\Images\category1.jpg" />
@@ -98,6 +99,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Profile\ProfilePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\Styles\Fonts.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

@@ -19,6 +19,7 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 				fonts.AddFont("ShadowsIntoLight-Regular.ttf", "Shadows");
 				fonts.AddFont("Sofia-Regular.ttf", "Sofia");
+				fonts.AddFont("Font Awesome 5 Free-Solid-900.otf", "FA-5-Solid");
 			});
 
 #if DEBUG
