@@ -14,6 +14,6 @@ public partial class CategoriesViewModel
 
     public async Task InitializeAsync()
     {
-
+        // TODO: Liste der Speisen laden
     }
 }

@@ -9,4 +9,6 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
     </VerticalStackLayout>
+    <!-- TODO: Überschrift -->
+    <!-- TODO: Liste der Speisen -->
 </ContentPage>
