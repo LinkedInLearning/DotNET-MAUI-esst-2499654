@@ -54,6 +54,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\ShadowsIntoLight-Regular.ttf" />
+	  <None Remove="Resources\Fonts\Sofia-Regular.ttf" />
 	  <None Remove="Resources\Images\category1.jpg" />
 	  <None Remove="Resources\Images\category2.jpg" />
 	  <None Remove="Resources\Images\category3.jpg" />
