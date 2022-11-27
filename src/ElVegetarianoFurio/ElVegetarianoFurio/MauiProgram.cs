@@ -1,4 +1,5 @@
-﻿using ElVegetarianoFurio.Menu;
+﻿using CommunityToolkit.Maui;
+using ElVegetarianoFurio.Menu;
 using ElVegetarianoFurio.Profile;
 using Microsoft.Extensions.Logging;
 
@@ -11,6 +12,7 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
+			.UseMauiCommunityToolkit()
 			.ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -28,7 +30,7 @@ public static class MauiProgram
 		builder.Services.AddSingleton<IMenuService, MenuService>();
         builder.Services.AddTransient<MainPageViewModel>();
         builder.Services.AddTransient<MainPage>();
-
+		builder.Services.AddTransientWithShellRoute<CategoriesPage, CategoriesViewModel>(nameof(CategoriesPage));
         return builder.Build();
 	}
 }

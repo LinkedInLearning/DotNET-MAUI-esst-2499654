@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 namespace ElVegetarianoFurio.Menu;
 
 [INotifyPropertyChanged]
+[QueryProperty("Category", "Category")]
 public partial class CategoriesViewModel
 {
     [ObservableProperty]
