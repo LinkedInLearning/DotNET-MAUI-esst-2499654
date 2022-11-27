@@ -15,8 +15,8 @@
                     <DataTemplate x:DataType="menu:Category">
                         <Border Margin="5" StrokeShape="RoundRectangle 15 15 15 15" StrokeThickness="0">
                             <Grid HeightRequest="200">
-                                <Rectangle HeightRequest="200" HorizontalOptions="Fill" Fill="Red"/>
-                                <VerticalStackLayout Padding="5" VerticalOptions="End" BackgroundColor="Black" Opacity="0.7">
+                            <Image Source="{Binding Id, StringFormat='category{0}.jpg'}" HeightRequest="200" Aspect="Fill"/>
+                            <VerticalStackLayout Padding="5" VerticalOptions="End" BackgroundColor="Black" Opacity="0.7">
                                     <Label Text="{Binding Name}" FontAttributes="Bold" TextColor="White"/>
                                     <Label Text="{Binding Description}" FontAttributes="Italic" TextColor="White"/>
                                 </VerticalStackLayout>
