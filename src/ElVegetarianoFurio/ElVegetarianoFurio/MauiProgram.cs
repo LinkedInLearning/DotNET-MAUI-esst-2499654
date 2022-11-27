@@ -34,6 +34,7 @@ public static class MauiProgram
         builder.Services.AddTransient<MainPageViewModel>();
         builder.Services.AddTransient<MainPage>();
 		builder.Services.AddTransientWithShellRoute<CategoriesPage, CategoriesViewModel>(nameof(CategoriesPage));
+        builder.Services.AddTransientWithShellRoute<DishPage, DishViewModel>(nameof(DishPage));
         return builder.Build();
 	}
 }

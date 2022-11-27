@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using System.Collections.ObjectModel;
 
 namespace ElVegetarianoFurio.Menu;
@@ -28,5 +29,15 @@ public partial class CategoriesViewModel
         {
             Dishes.Add(dish);
         }
+    }
+
+    [RelayCommand]
+    private async Task NavigateToDish(Dish dish)
+    {
+        var navigationParameter = new Dictionary<string, object>
+        {
+            { "Dish", dish}
+        };
+        await Shell.Current.GoToAsync(nameof(DishPage), navigationParameter);
     }
 }

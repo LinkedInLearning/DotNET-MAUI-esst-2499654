@@ -24,6 +24,12 @@
                         <Label Grid.Column="1" FontFamily="Shadows"  Text="{Binding Name}" FontAttributes="Bold"/>
                         <Label Grid.Column="1" FontFamily="Shadows"  Grid.Row="1" Text="{Binding Description}" FontAttributes="Italic"/>
                         <Label Grid.Column="2" FontFamily="Shadows"  Text="{Binding Price, StringFormat='{0:C}'}"/>
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type menu:CategoriesViewModel}},
+                                    Path=NavigateToDishCommand}"
+                                    CommandParameter="{Binding .}"/>
+                        </Grid.GestureRecognizers>
                     </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
