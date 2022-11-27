@@ -37,7 +37,7 @@ public class MenuService : IMenuService
         var menu = await GetMenuAsync();
         if (categoryId.HasValue)
         {
-            return menu.Dishes.Where(d => d.Id == categoryId).ToList();
+            return menu.Dishes.Where(d => d.CategoryId == categoryId).ToList();
         }
         return menu.Dishes;
     }

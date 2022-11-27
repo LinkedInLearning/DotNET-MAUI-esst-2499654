@@ -2,11 +2,18 @@ namespace ElVegetarianoFurio.Menu;
 
 public partial class CategoriesPage : ContentPage
 {
-	public CategoriesPage()
+    private readonly CategoriesViewModel _viewModel;
+
+    public CategoriesPage(CategoriesViewModel viewModel)
 	{
 		InitializeComponent();
-	}
+        BindingContext = _viewModel = viewModel;
+    }
 
-	// TODO: Seite und ViewModel verbinden
-	// TODO: Methode InitializeAsync im ViewModel anlegen
+
+    protected override async void OnNavigatedTo(NavigatedToEventArgs args)
+    {
+        await _viewModel.InitializeAsync();
+        base.OnNavigatedTo(args);
+    }
 }

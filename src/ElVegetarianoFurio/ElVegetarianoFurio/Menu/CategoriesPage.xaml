@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:menu="clr-namespace:ElVegetarianoFurio.Menu"
+             x:DataType="menu:CategoriesViewModel"
              x:Class="ElVegetarianoFurio.Menu.CategoriesPage"
-             Title="CategoriesPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
-    <!-- TODO: Überschrift -->
-    <!-- TODO: Liste der Speisen -->
+             Title="{Binding Category.Name}">
+    <Grid RowDefinitions="auto,*">
+        <Border  StrokeShape="RoundRectangle 0 0 15 15" StrokeThickness="0">
+            <Grid HeightRequest="200">
+                <Image Source="{Binding Category.Id, StringFormat='category{0}.jpg'}" HeightRequest="200" Aspect="Fill"/>
+                <VerticalStackLayout Padding="5" VerticalOptions="End" BackgroundColor="Black" Opacity="0.7">
+                    <Label Text="{Binding Category.Name}" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="{Binding Category.Description}" FontAttributes="Italic" TextColor="White"/>
+                </VerticalStackLayout>
+            </Grid>
+        </Border>
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Dishes}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="menu:Dish">
+                    <Grid RowDefinitions="auto, auto" ColumnDefinitions="60, *, auto" 
+                          RowSpacing="6" ColumnSpacing="6" Padding="10">
+                        <Image Source="{Binding Id, StringFormat='dish{0}.jpg'}" WidthRequest="60" Aspect="Fill" Grid.RowSpan="2"/>
+                        <Label Grid.Column="1" Text="{Binding Name}" FontAttributes="Bold"/>
+                        <Label Grid.Column="1" Grid.Row="1" Text="{Binding Description}" FontAttributes="Italic"/>
+                        <Label Grid.Column="2" Text="{Binding Price, StringFormat='{0:C}'}"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+
 </ContentPage>
