@@ -32,7 +32,7 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\utensils.svg" TintColor="#FFFFFF" Color="#512BD4" ForegroundScale="0,5"/>  <!-- In Zukunft muss ForegroundScale mit einem Punkt als Dezimaltrennzeichen eingetragen werden. Siehe Issue #11685 -->
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
@@ -107,3 +107,4 @@
 	</ItemGroup>
 
 </Project>
+ 
