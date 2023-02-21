@@ -1,10 +1,10 @@
 # .NET MAUI Grundkurs
 
-Dies ist das Repository für den **LinkedIn Learning** Kurs `[COURSENAME]`. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
+Dies ist das Repository für den **LinkedIn Learning** Kurs `[.NET MAUI Grundkurs]`. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
 
-![COURSENAME][lil-thumbnail-url][Copy&Past Image from LiL-Buddy] 
+![image](https://user-images.githubusercontent.com/71371373/220305439-7c068c65-3cff-4683-aadd-59dfda57abd9.png)
 
-[COURSEDESCRIPTION]
+Sie möchten Apps entwickeln, die sowohl mobil unter Android und iOS als auch auf dem Desktop unter macOS und Windows nativ lauffähig sind? Der erfahrene Softwareentwickler und langjährige Microsoft-MVP André Krämer führt Sie in diesem LinkedIn Learning Kurs Schritt für Schritt in die Welt der Cross-Plattform-Entwicklung mit .NET MAUI und C# ein. Zum Start sehen Sie, wie Sie den Xamarin-Nachfolger auf Ihrem Windows-PC und Ihrem Mac installieren und wie Sie die Entwicklungsumgebungen nutzen. Im Laufe des Kurses programmieren Sie eine Beispiel-App für ein fiktives Restaurant und vertiefen dabei das erworbene Wissen. Mit Hilfe von Challenge/Solutions-Einheiten können Sie das Gelernte immer wieder überprüfen und Ihre Lösung mit der Ihres Trainers vergleichen.
 
 ## Anleitung
 
@@ -44,5 +44,5 @@ _Geschäftsführer der Quality Bytes GmbH_
 Sehen Sie sich andere Kurse des Autors auf [LinkedIn Learning](https://www.linkedin.com/learning/instructors/andre-kramer) an.
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
-[lil-course-url]: https://www.linkedin.com/learning/building-a-graphql-project-with-react-js
+[lil-course-url]: https://www.linkedin.com/learning/dot-net-maui-grundkurs/native-apps-mit-dot-net-maui-und-c-sharp-entwickeln
 [lil-thumbnail-url]: https://cdn.lynda.com/course/2875095/2875095-1615224395432-16x9.jpg
